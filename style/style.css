@@ -1,0 +1,163 @@
+/*'*'*'*'*'*'**'*'*'*/
+/* Layout section*/
+
+body {
+  display: grid;
+  grid-template-areas:
+    "nav nav "
+    "header header"
+    "mainsection1 mainsection1"
+    "mainsection2 mainsection2"
+    "mainsection3 mainsection3"
+    "mainsection4 mainsection4"
+    "footer footer";
+  grid-gap: 1px;
+  margin: 0;
+}
+
+nav,
+header,
+.mainsection1,
+.mainsection2,
+.mainsection3,
+.mainsection4,
+footer {
+  background: #fff2ea;
+  border: 2px solid #fe6700;
+  width: 100%;
+}
+
+nav {
+  grid-area: nav;
+  height: 137px;
+}
+
+header {
+  grid-area: header;
+  height: 444px;
+}
+
+.mainsection1 {
+  grid-area: mainsection1;
+  height: 444px;
+}
+
+.mainsection2 {
+  grid-area: mainsection2;
+  height: 739px;
+}
+
+.mainsection3 {
+  grid-area: mainsection3;
+  height: 528px;
+}
+
+.mainsection4 {
+  grid-area: mainsection4;
+  height: 528px;
+}
+
+footer {
+  grid-area: footer;
+  height: 554px;
+}
+
+/*'*'*'*'*'*'**'*'*'*/
+
+/*Nav*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pagetitle {
+  font-family: "play", sans-serif;
+  font-size: 2.5em;
+  margin-left: 10px;
+}
+#pagetitle::first-letter {
+  color: #4c6ef5;
+}
+
+/*'*'*'*'*'*'**'*'*'*/
+/*@Media*/
+/*'*'*'*'*'*'**'*'*'*/
+
+@media only screen and (min-width: 320px) and (max-width: 812px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "nav nav "
+      "header header"
+      "mainsection1 mainsection1"
+      "mainsection2 mainsection2"
+      "mainsection4 mainsection4"
+      "footer footer";
+    grid-gap: 1px;
+    margin: 0;
+  }
+
+  nav,
+  header,
+  .mainsection1,
+  .mainsection2,
+  .mainsection4,
+  footer {
+    background: #fff2ea;
+    border: 2px solid #fe6700;
+    width: 100%;
+  }
+
+  nav {
+    grid-area: nav;
+    height: 100px;
+  }
+
+  header {
+    grid-area: header;
+    height: 204px;
+  }
+
+  .mainsection1 {
+    grid-area: mainsection1;
+    height: 398px;
+  }
+
+  .mainsection2 {
+    grid-area: mainsection2;
+    height: 704px;
+  }
+
+  .mainsection3 {
+    display: none;
+  }
+
+  .mainsection4 {
+    grid-area: mainsection4;
+    height: 108px;
+  }
+
+  footer {
+    grid-area: footer;
+    height: 216px;
+  }
+
+  /*'*'*'*'*'*'*'*'*/
+  /*Nav*/
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #pagetitle {
+    font-family: "play", sans-serif;
+    font-size: 1.5em;
+    margin-left: 10px;
+  }
+  .navlogo {
+    display: none;
+  }
+}
