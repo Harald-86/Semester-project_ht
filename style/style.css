@@ -1,5 +1,6 @@
 /*'*'*'*'*'*'**'*'*'*/
 /* Layout*/
+@import url("https://fonts.googleapis.com/css2?family=Play&family=Roboto&display=swap");
 
 body {
   display: grid;
@@ -13,7 +14,7 @@ body {
     "footer footer";
   grid-gap: 1px;
   margin: 0;
-  font
+  font-family: "roboto", sans-serif;
 }
 
 nav,
@@ -29,8 +30,7 @@ footer {
 nav {
   grid-area: nav;
   height: 137px;
-  font-family: 'play', sans-serif;
-  
+  font-family: "play", sans-serif;
 }
 
 header {
@@ -83,7 +83,9 @@ ul {
 #pagetitle::first-letter {
   color: #4c6ef5;
 }
-
+.c {
+  color: #4c6ef5;
+}
 .s {
   color: #f783ac;
 }
@@ -91,15 +93,15 @@ ul {
   color: #82c91e;
 }
 
-ul{
+ul {
   margin-right: 5px;
 }
 
-#checkbox{
+#checkbox {
   display: none;
 }
 
-.bars{
+.bars {
   display: none;
 }
 
@@ -110,12 +112,12 @@ li {
   margin: 20px;
 }
 
-li a{
+li a {
   text-decoration: none;
-  color:#184C54 ;
+  color: #184c54;
 }
 
-li a:hover{
+li a:hover {
   display: inline-block;
   font-weight: bold;
   text-shadow: 0 3px 6px #00000029;
@@ -138,7 +140,7 @@ li a:hover{
 }
 
 /*'*'*'*'*'*'**'*'*'*/
-/*Header section*/ /*Done*/
+/*Header section*/
 /*'*'*'*'*'*'**'*'*'*/
 
 header {
@@ -167,6 +169,48 @@ header {
 }
 
 /*'*'*'*'*'*'**'*'*'*/
+/*Main section 1*/
+/*'*'*'*'*'*'**'*'*'*/
+
+.mainsection1 {
+  display: flex;
+  justify-content: center;
+
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.main_1_text {
+  margin-top: 50px;
+  max-width: 754px;
+  max-height: 356px;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.main_1_text::first-letter {
+  color: #4c6ef5;
+  font-weight: bold;
+}
+.astronaut {
+  width: 100%;
+  max-width: 790px;
+  max-height: 432px;
+  height: auto;
+  border: 1 px solid #707070;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px #00000029;
+  margin: 10px;
+}
+
+/*'*'*'*'*'*'**'*'*'*/
+/*Desktop display none list*/
+/*'*'*'*'*'*'**'*'*'*/
+
+.phone_astronaut {
+  display: none;
+}
+
+/*'*'*'*'*'*'**'*'*'*/
 /*@Media*/
 /*'*'*'*'*'*'**'*'*'*/
 
@@ -174,20 +218,24 @@ header {
   body {
     display: grid;
     grid-template-areas:
-      "nav nav "
-      "header header"
-      "mainsection1 mainsection1"
-      "mainsection2 mainsection2"
-      "mainsection4 mainsection4"
-      "footer footer";
+      "nav"
+      "header"
+      "mainsection1"
+      "phone_astronaut"
+      "mainsection2"
+      "mainsection4"
+      "footer";
     grid-gap: 1px;
-    margin: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
   }
 
   nav,
   header,
   .mainsection1,
   .mainsection2,
+  .phone_astronaut,
   .mainsection4,
   footer {
     background: #fff;
@@ -214,6 +262,11 @@ header {
     height: 704px;
   }
 
+  .phone_astronaut {
+    grid-area: phone_astronaut;
+    height: 207px;
+  }
+
   .mainsection3 {
     display: none;
   }
@@ -233,7 +286,7 @@ header {
 
   nav {
     display: flex;
-
+    width: 95%;
     justify-content: space-between;
     align-items: center;
   }
@@ -266,11 +319,48 @@ header {
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #707070;
   }
-  .fas, ul {
+  .fas,
+  ul {
     display: none;
   }
 
-  
+  /*'*'*'*'*'*'**'*'*'*/
+  /*Main section 1*/
+  /*'*'*'*'*'*'**'*'*'*/
 
-  
+  .mainsection1 {
+    display: block;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 0;
+  }
+
+  .phone_astronaut {
+    display: inline-block;
+    background-image: url("../Images/smaller_screens_images/astronaut_phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: bottom;
+    box-shadow: 0px 3px 6px #00000029;
+    height: 390px;
+    width: 100%;
+  }
+
+  .main_1_text {
+    margin-top: 100px;
+    font-size: 1.5em;
+  }
+
+  .main_1_text::first-letter {
+    color: #4c6ef5;
+    font-weight: bold;
+  }
+
+  /*'*'*'*'*'*'**'*'*'*/
+  /*Smaller screens display none list*/
+  /*'*'*'*'*'*'**'*'*'*/
+
+  .astronaut {
+    display: none;
+  }
 }
