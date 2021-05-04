@@ -1,5 +1,5 @@
 /*'*'*'*'*'*'**'*'*'*/
-/* Layout section*/
+/* Layout*/
 
 body {
   display: grid;
@@ -13,6 +13,7 @@ body {
     "footer footer";
   grid-gap: 1px;
   margin: 0;
+  font
 }
 
 nav,
@@ -22,14 +23,14 @@ header,
 .mainsection3,
 .mainsection4,
 footer {
-  background: #fff2ea;
-  border: 2px solid #fe6700;
   width: 100%;
 }
 
 nav {
   grid-area: nav;
   height: 137px;
+  font-family: 'play', sans-serif;
+  
 }
 
 header {
@@ -64,8 +65,9 @@ footer {
 
 /*'*'*'*'*'*'**'*'*'*/
 
-/*Nav*/
-nav {
+/*Nav section*/
+nav,
+ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,9 +77,93 @@ nav {
   font-family: "play", sans-serif;
   font-size: 2.5em;
   margin-left: 10px;
+  color: #184c54;
 }
+
 #pagetitle::first-letter {
   color: #4c6ef5;
+}
+
+.s {
+  color: #f783ac;
+}
+.m {
+  color: #82c91e;
+}
+
+ul{
+  margin-right: 5px;
+}
+
+#checkbox{
+  display: none;
+}
+
+.bars{
+  display: none;
+}
+
+li {
+  display: inline;
+  font-size: 1.5em;
+  list-style-type: none;
+  margin: 20px;
+}
+
+li a{
+  text-decoration: none;
+  color:#184C54 ;
+}
+
+li a:hover{
+  display: inline-block;
+  font-weight: bold;
+  text-shadow: 0 3px 6px #00000029;
+}
+
+.fas {
+  padding: 2px;
+  display: inline-block;
+}
+
+.fa-atom {
+  color: #4c6ef5;
+}
+.fa-microscope {
+  color: #f783ac;
+}
+
+.fa-rocket {
+  color: #82c91e;
+}
+
+/*'*'*'*'*'*'**'*'*'*/
+/*Header section*/ /*Done*/
+/*'*'*'*'*'*'**'*'*'*/
+
+header {
+  background-image: url("../Images/exhibition.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: bottom;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+#headertext {
+  font-family: "play", sans-serif;
+  color: #fb7f66;
+  padding: 10px;
+  font-size: 5em;
+  text-shadow: 0 3px 6px #00000029;
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  left: 65px;
+  top: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #707070;
 }
 
 /*'*'*'*'*'*'**'*'*'*/
@@ -104,8 +190,7 @@ nav {
   .mainsection2,
   .mainsection4,
   footer {
-    background: #fff2ea;
-    border: 2px solid #fe6700;
+    background: #fff;
     width: 100%;
   }
 
@@ -148,7 +233,7 @@ nav {
 
   nav {
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-between;
     align-items: center;
   }
@@ -157,7 +242,35 @@ nav {
     font-size: 1.5em;
     margin-left: 10px;
   }
-  .navlogo {
+
+  header {
+    background-image: url("../Images/exhibition.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: bottom;
+    box-shadow: 0px 3px 6px #00000029;
+  }
+
+  #headertext {
+    font-family: "play", sans-serif;
+    color: #fb7f66;
+    padding: 10px;
+    font-size: 3em;
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    left: 65px;
+    top: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #707070;
+  }
+  .fas, ul {
     display: none;
   }
+
+  
+
+  
 }
