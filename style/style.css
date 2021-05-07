@@ -20,7 +20,7 @@ body {
   background-color: rgb(238, 238, 238);
 }
 
-nav,
+.navsection,
 header,
 .mainsection1,
 .mainsection2,
@@ -31,7 +31,7 @@ footer {
   background-color: #fff;
 }
 
-nav {
+.navsection {
   grid-area: nav;
   box-shadow: 0px 3px 6px #00000029;
   font-family: "play", sans-serif;
@@ -66,12 +66,53 @@ footer {
 /*'*'*'*'*'*'**'*'*'*/
 
 /*Nav section*/
-nav,
+
+.navsection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Dette er limt inn*/
+.hamburger-label {
+  display: none;
+}
+
+nav {
+  display: flex;
+}
+
 nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
+
+nav li {
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #184c54;
+  padding: 10px;
+  display: block;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+/*Dette er limt inn*/
 
 #pagetitle {
   font-family: "play", sans-serif;
@@ -91,36 +132,6 @@ nav ul {
 }
 .m {
   color: #82c91e;
-}
-
-ul {
-  margin-right: 5px;
-}
-
-#checkbox {
-  display: none;
-}
-
-.bars {
-  display: none;
-}
-
-nav li {
-  display: inline;
-  font-size: 1.5em;
-  list-style-type: none;
-  margin: 20px;
-}
-
-li a {
-  text-decoration: none;
-  color: #184c54;
-}
-
-li a:hover {
-  display: inline-block;
-  font-weight: bold;
-  text-shadow: 0 3px 6px #00000029;
 }
 
 .fas {
@@ -270,7 +281,7 @@ footer {
   width: 100%;
   text-align: center;
   font-family: "play", sans-serif;
-  font-size: 1.8em;
+  font-size: 1em;
   margin: 0;
   padding: 5px;
 }
@@ -279,7 +290,8 @@ footer {
 /*Desktop display none list*/
 /*'*'*'*'*'*'**'*'*'*/
 .vr-glasses_phone,
-.phone_astronaut {
+.phone_astronaut,
+#phone_menu {
   display: none;
 }
 
@@ -302,7 +314,7 @@ footer {
     width: 100%;
   }
 
-  nav,
+  .navsection,
   header,
   .mainsection1,
   .mainsection2,
@@ -311,7 +323,7 @@ footer {
     background: #fff;
   }
 
-  nav {
+  .navsection {
     grid-area: nav;
   }
 
@@ -340,14 +352,30 @@ footer {
   }
 
   /*'*'*'*'*'*'*'*'*/
-  /*Nav*/
-
-  nav {
-    display: flex;
+  /*Nav section*/
+  .navsection {
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
   }
+  /*Dette har jeg limt inn*/
+
+  .hamburger-label {
+    display: block;
+    float: right;
+  }
+
+  ul {
+    display: block;
+  }
+
+  li a {
+    display: block;
+  }
+
+  nav a {
+    padding: 20px;
+  }
+  /*Dette har jeg limt inn*/
+
   #pagetitle {
     font-family: "play", sans-serif;
     font-size: 1.5em;
@@ -376,10 +404,6 @@ footer {
     border-radius: 5px;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #707070;
-  }
-  .fas,
-  ul {
-    display: none;
   }
 
   /*'*'*'*'*'*'**'*'*'*/
@@ -466,7 +490,12 @@ footer {
   /*Smaller screens display none list*/
   /*'*'*'*'*'*'**'*'*'*/
   .vr-glasses,
-  .footernav {
+  .footernav,
+  .links,
+  .fa-atom,
+  .fa-microscope,
+  .fa-rocket,
+  nav {
     display: none;
   }
 }
