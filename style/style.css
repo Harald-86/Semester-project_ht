@@ -51,7 +51,6 @@ header {
 
 .mainsection3 {
   grid-area: mainsection3;
-  height: 444px;
 }
 
 .mainsection4 {
@@ -61,6 +60,29 @@ header {
 
 footer {
   grid-area: footer;
+}
+
+/* For all*/
+
+.cta {
+  background-color: #184c54;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 2em;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px #00000029;
+  transition: 0.5s;
+}
+
+.cta:hover {
+  padding: 10px 80px;
+  font-size: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: #184c54;
+  font-weight: bold;
 }
 
 /*'*'*'*'*'*'**'*'*'*/
@@ -250,7 +272,27 @@ header {
 /*'*'*'*'*'*'**'*'*'*/
 
 .mainsection3 {
+  text-align: center;
   box-shadow: 0px 3px 6px #00000029;
+}
+
+#involved {
+  font-family: "play", sans-serif;
+  display: inline-block;
+  padding: 10px 30px;
+  text-shadow: #00000029;
+  box-shadow: 0 3px 6px #00000029;
+  font-size: 3em;
+  text-decoration: underline;
+  border: 2px solid #184c54;
+  border-radius: 5px;
+}
+
+.mainsection3_cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /*'*'*'*'*'*'**'*'*'*/
