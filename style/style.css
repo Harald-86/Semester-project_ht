@@ -46,6 +46,7 @@ header {
   background-size: cover;
   background-position-x: right;
   background-position-y: bottom;
+  height: 400px;
 }
 
 .mainsection1 {
@@ -219,7 +220,7 @@ nav a:hover {
 .main_1_text {
   max-width: 400px;
   max-height: 356px;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .main_1_text::first-letter {
@@ -243,7 +244,7 @@ nav a:hover {
 .main_2_text {
   max-width: 450px;
   max-height: 356px;
-  font-size: 1.3em;
+  font-size: 1.5em;
   padding: 15px;
 }
 

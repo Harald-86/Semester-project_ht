@@ -46,6 +46,7 @@ header {
   background-size: cover;
   background-position-x: right;
   background-position-y: bottom;
+  height: 400px;
 }
 
 .mainsection1 {
@@ -53,7 +54,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .mainsection2 {
@@ -111,6 +112,10 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+p::first-letter {
+  font-weight: bold;
 }
 
 /*'*'*'*'*'*'**'*'*'*/
@@ -213,6 +218,32 @@ nav a:hover {
 }
 
 /*'*'*'*'*'*'**'*'*'*/
+/*Main section 1*/
+/*'*'*'*'*'*'**'*'*'*/
+
+.text {
+  font-size: 1.5em;
+  width: 400px;
+  padding: 20px;
+  margin: 0 50px;
+}
+
+/*'*'*'*'*'*'**'*'*'*/
+/*Main section 2*/
+/*'*'*'*'*'*'**'*'*'*/
+
+.elephant {
+  display: block;
+  margin: 0 20px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+/*'*'*'*'*'*'**'*'*'*/
 /*Footer*/
 /*'*'*'*'*'*'**'*'*'*/
 
@@ -263,7 +294,7 @@ nav a:hover {
       "mainsection2"
       "mainsection4"
       "footer";
-    grid-gap: 20px;
+
     margin: 0 auto;
     width: 100%;
   }
@@ -271,13 +302,13 @@ nav a:hover {
   .navsection,
   header,
   .mainsection1,
+  .mainsection3,
   .mainsection2,
   .mainsection4,
   footer {
     background: #fff;
     box-shadow: 0px 3px 6px #00000029;
     width: 100%;
-    border: #184c54 solid 1px;
   }
 
   .navsection {
@@ -293,6 +324,7 @@ nav a:hover {
     background-size: cover;
     background-position-x: right;
     background-position-y: bottom;
+    height: 150px;
   }
 
   .mainsection1 {
@@ -311,7 +343,7 @@ nav a:hover {
 
   .mainsection3 {
     background-image: url("../../Images/smaller_screens_images/chem_phone.jpg");
-    height: 200px;
+    height: 150px;
     background-size: cover;
     background-position-y: bottom;
     background-position-x: right;
@@ -319,7 +351,7 @@ nav a:hover {
 
   .mainsection4 {
     grid-area: mainsection4;
-    height: 200px;
+    height: 150px;
     background-image: url("../../Images/smaller_screens_images/museum_phone.jpg");
     background-size: cover;
     background-position-y: bottom;
@@ -414,9 +446,20 @@ nav a:hover {
   /*Main section 1*/
   /*'*'*'*'*'*'**'*'*'*/
 
+  .text {
+    font-size: 1.2em;
+    width: 100%;
+    padding: 20px;
+    margin: 0 50px;
+  }
+
   /*'*'*'*'*'*'**'*'*'*/
   /*Main section 2*/
   /*'*'*'*'*'*'**'*'*'*/
+
+  .elephant {
+    display: none;
+  }
 
   /*'*'*'*'*'*'**'*'*'*/
   /*Main section 4*/
