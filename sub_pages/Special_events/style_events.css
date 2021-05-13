@@ -60,14 +60,17 @@ header {
 .mainsection2 {
   grid-area: mainsection2;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .mainsection3 {
   grid-area: mainsection3;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .mainsection4 {
@@ -112,6 +115,13 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+h2 {
+  display: inline-block;
+  width: 100%;
+
+  text-align: center;
 }
 
 /*'*'*'*'*'*'**'*'*'*/
@@ -213,6 +223,26 @@ nav a:hover {
   border: 1px solid #707070;
 }
 
+h2,
+h3 {
+  text-shadow: 0px 3px 6px #00000029;
+}
+h4 {
+  text-decoration: underline;
+}
+
+.text,
+.event_images {
+  width: 500px;
+  font-size: 1.3em;
+}
+
+.event_images {
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
 /*'*'*'*'*'*'**'*'*'*/
 /*Footer*/
 /*'*'*'*'*'*'**'*'*'*/
@@ -256,6 +286,7 @@ nav a:hover {
       "header"
       "mainsection1"
       "mainsection2"
+      "mainsection3"
       "mainsection4"
       "footer";
     margin: 0 auto;
@@ -266,6 +297,7 @@ nav a:hover {
   header,
   .mainsection1,
   .mainsection2,
+  .mainsection3,
   .mainsection4,
   footer {
     background: #fff;
@@ -304,7 +336,10 @@ nav a:hover {
   }
 
   .mainsection3 {
-    display: none;
+    grid-area: mainsection3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .mainsection4 {
@@ -400,21 +435,17 @@ nav a:hover {
     border: 1px solid #707070;
   }
 
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Main section 1*/
-  /*'*'*'*'*'*'**'*'*'*/
+  .text,
+  .event_images {
+    width: 320px;
+    font-size: 1.3em;
+  }
 
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Main section 2*/
-  /*'*'*'*'*'*'**'*'*'*/
-
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Main section 4*/
-  /*'*'*'*'*'*'**'*'*'*/
-
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Footer section*/
-  /*'*'*'*'*'*'**'*'*'*/
+  .event_images {
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #00000029;
+  }
 
   footer ul {
     display: flex;
