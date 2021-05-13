@@ -60,14 +60,17 @@ header {
 .mainsection2 {
   grid-area: mainsection2;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .mainsection3 {
   grid-area: mainsection3;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .mainsection4 {
@@ -99,7 +102,17 @@ footer {
   transition: 0.5s;
 }
 
-.cta:hover {
+.cta_inv {
+  background-color: #184c54;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px #00000029;
+  transition: 0.5s;
+}
+
+.cta,
+.cta_inv:hover {
   font-size: 1em;
   padding: 10px 80px;
 }
@@ -213,6 +226,17 @@ nav a:hover {
   border: 1px solid #707070;
 }
 
+.text,
+.involved_img {
+  width: 500px;
+}
+
+.involved_img {
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
 /*'*'*'*'*'*'**'*'*'*/
 /*Footer*/
 /*'*'*'*'*'*'**'*'*'*/
@@ -234,7 +258,9 @@ nav a:hover {
 /*'*'*'*'*'*'**'*'*'*/
 /*Desktop display none list*/
 /*'*'*'*'*'*'**'*'*'*/
-
+.cta_inv {
+  display: none;
+}
 /*'*'*'*'*'*'**'*'*'*/
 /*@Media*/
 /*'*'*'*'*'*'**'*'*'*/
@@ -256,6 +282,7 @@ nav a:hover {
       "header"
       "mainsection1"
       "mainsection2"
+      "mainsection3"
       "mainsection4"
       "footer";
     margin: 0 auto;
@@ -266,6 +293,7 @@ nav a:hover {
   header,
   .mainsection1,
   .mainsection2,
+  .mainsection3,
   .mainsection4,
   footer {
     background: #fff;
@@ -287,24 +315,6 @@ nav a:hover {
     background-position-x: right;
     background-position-y: bottom;
     height: 150px;
-  }
-
-  .mainsection1 {
-    grid-area: mainsection1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .mainsection2 {
-    grid-area: mainsection2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .mainsection3 {
-    display: none;
   }
 
   .mainsection4 {
@@ -401,20 +411,12 @@ nav a:hover {
   }
 
   /*'*'*'*'*'*'**'*'*'*/
-  /*Main section 1*/
+  /*Main section*/
   /*'*'*'*'*'*'**'*'*'*/
-
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Main section 2*/
-  /*'*'*'*'*'*'**'*'*'*/
-
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Main section 4*/
-  /*'*'*'*'*'*'**'*'*'*/
-
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Footer section*/
-  /*'*'*'*'*'*'**'*'*'*/
+  .text,
+  .involved_img {
+    width: 320px;
+  }
 
   footer ul {
     display: flex;
@@ -424,6 +426,10 @@ nav a:hover {
 
   .footerinfo {
     font-size: 0.8em;
+  }
+
+  .cta_inv {
+    display: block;
   }
 
   /*'*'*'*'*'*'**'*'*'*/
