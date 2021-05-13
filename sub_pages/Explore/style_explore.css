@@ -46,7 +46,7 @@ header {
   background-size: cover;
   background-position-x: right;
   background-position-y: bottom;
-  height: 400px;
+  height: 320px;
 }
 
 .mainsection1 {
@@ -76,7 +76,7 @@ header {
   background-size: cover;
   background-position-y: bottom;
   background-position-x: right;
-  height: 440px;
+  height: 320px;
 }
 
 footer {
@@ -325,7 +325,7 @@ h3 {
     background-size: cover;
     background-position-x: right;
     background-position-y: bottom;
-    height: 150px;
+    height: 100px;
   }
 
   .mainsection1 {

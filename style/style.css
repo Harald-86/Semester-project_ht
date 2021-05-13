@@ -46,7 +46,7 @@ header {
   background-size: cover;
   background-position-x: right;
   background-position-y: bottom;
-  height: 400px;
+  height: 320px;
 }
 
 .mainsection1 {
@@ -76,7 +76,7 @@ header {
   background-size: cover;
   background-position-y: bottom;
   background-position-x: right;
-  height: 440px;
+  height: 320px;
 }
 
 footer {
@@ -389,7 +389,7 @@ nav a:hover {
 
   .mainsection4 {
     grid-area: mainsection4;
-    height: 200px;
+    height: 100px;
     background-image: url("../Images/museum.jpg");
     background-size: cover;
     background-position-y: bottom;
