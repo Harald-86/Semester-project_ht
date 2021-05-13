@@ -247,8 +247,9 @@ nav a:hover {
 .scientific {
   width: 600px;
   height: auto;
-  margin: 10px;
+  margin: 20px;
   border-radius: 15px;
+  box-shadow: 0px 3px 6px #00000029;
 }
 
 /*'*'*'*'*'*'**'*'*'*/
@@ -339,7 +340,7 @@ nav a:hover {
   .mainsection4 {
     grid-area: mainsection4;
     height: 150px;
-    background-image: url("../../Images/smaller_screens_images/museum_phone.jpg");
+    background-image: url("../../Images/museum.jpg");
     background-size: cover;
     background-position-y: bottom;
     background-position-x: right;
