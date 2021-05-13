@@ -352,7 +352,7 @@ h3 {
   .mainsection4 {
     grid-area: mainsection4;
     height: 150px;
-    background-image: url("../../Images/smaller_screens_images/museum_phone.jpg");
+    background-image: url("../../Images/museum.jpg");
     background-size: cover;
     background-position-y: bottom;
     background-position-x: right;
