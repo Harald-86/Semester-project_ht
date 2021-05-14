@@ -464,9 +464,7 @@ h3 {
     margin: 10px 0;
   }
 
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Footer section*/
-  /*'*'*'*'*'*'**'*'*'*/
+  /*Footer*/
 
   footer ul {
     display: flex;
@@ -475,7 +473,7 @@ h3 {
   }
 
   .footerinfo {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   /*'*'*'*'*'*'**'*'*'*/

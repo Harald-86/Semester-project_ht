@@ -450,7 +450,7 @@ nav a:hover {
     margin: 0 auto;
   }
 
-  /*Footer section*/
+  /*Footer*/
 
   footer ul {
     display: flex;
@@ -459,7 +459,7 @@ nav a:hover {
   }
 
   .footerinfo {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 
   /*'*'*'*'*'*'**'*'*'*/

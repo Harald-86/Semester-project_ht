@@ -423,6 +423,11 @@ a {
     width: 320px;
     font-size: 1.2em;
   }
+  .cta_inv {
+    display: block;
+  }
+
+  /*Footer*/
 
   footer ul {
     display: flex;
@@ -432,10 +437,6 @@ a {
 
   .footerinfo {
     font-size: 0.8em;
-  }
-
-  .cta_inv {
-    display: block;
   }
 
   /*'*'*'*'*'*'**'*'*'*/
