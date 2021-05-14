@@ -17,7 +17,7 @@ body {
   font-family: "roboto", sans-serif;
   max-width: 1366px;
   color: #184c54;
-  background-color: rgb(238, 238, 238);
+  background-color: #fff;
 }
 
 .navsection,
@@ -118,7 +118,6 @@ footer a:hover {
 
 /*Nav section*/
 
-/*Dette er limt inn*/
 .hamburger-label {
   display: none;
 }
@@ -157,8 +156,6 @@ nav a:hover {
   display: block;
 }
 
-/*Dette er limt inn*/
-
 #pagetitle {
   font-family: "play", sans-serif;
   font-size: 2em;
@@ -193,34 +190,32 @@ nav a:hover {
   color: #82c91e;
 }
 
-/*'*'*'*'*'*'**'*'*'*/
 /*Header section*/
-/*'*'*'*'*'*'**'*'*'*/
 
 #headertext {
-  font-family: "play", sans-serif;
-  color: #fb7f66;
-  padding: 9px;
-  font-size: 3em;
-  text-shadow: 0 3px 6px #00000029;
   display: inline-block;
   position: relative;
   background-color: #fff;
   left: 65px;
   top: 30px;
-  border-radius: 5px;
+  font-family: "play", sans-serif;
+  color: #fb7f66;
+  padding: 9px;
+  font-size: 3em;
+  text-shadow: 0 3px 6px #00000029;
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid #707070;
+  border-radius: 5px;
 }
 
-/*'*'*'*'*'*'**'*'*'*/
-/*Main section 1*/
-/*'*'*'*'*'*'**'*'*'*/
+/*Main section */
 
-.main_1_text {
-  max-width: 400px;
-  max-height: 356px;
-  font-size: 1.5em;
+.main_1_text,
+.main_2_text {
+  width: 500px;
+  max-height: auto;
+  font-size: 1.3em;
+  padding: 15px;
 }
 
 .main_1_text::first-letter {
@@ -228,43 +223,20 @@ nav a:hover {
   font-weight: bold;
 }
 
-.astronaut {
-  width: auto;
-  height: 300px;
+.astronaut,
+.vr-glasses {
+  width: 500px;
+  height: auto;
   border: 1 px solid #707070;
   border-radius: 5px;
   box-shadow: 0px 3px 6px #00000029;
   margin: 10px;
-}
-
-/*'*'*'*'*'*'**'*'*'*/
-/*Main section 2*/
-/*'*'*'*'*'*'**'*'*'*/
-
-.main_2_text {
-  max-width: 450px;
-  max-height: 356px;
-  font-size: 1.5em;
-  padding: 15px;
 }
 
 .main_2_text::first-letter {
   color: #f783ac;
   font-weight: bold;
 }
-
-.vr-glasses {
-  width: auto;
-  height: 350px;
-  border: 1 px solid #707070;
-  border-radius: 5px;
-  box-shadow: 0px 3px 6px #00000029;
-  margin: 10px;
-}
-
-/*'*'*'*'*'*'**'*'*'*/
-/*Main section 3*/
-/*'*'*'*'*'*'**'*'*'*/
 
 #involved {
   font-family: "play", sans-serif;
@@ -285,13 +257,7 @@ nav a:hover {
   align-items: center;
 }
 
-/*'*'*'*'*'*'**'*'*'*/
-/*Main section 4*/
-/*'*'*'*'*'*'**'*'*'*/
-
-/*'*'*'*'*'*'**'*'*'*/
-/*Footer*/
-/*'*'*'*'*'*'**'*'*'*/
+/* Footer*/
 
 .footerinfo {
   font-size: 1em;
@@ -307,9 +273,8 @@ nav a:hover {
   padding: 5px;
 }
 
-/*'*'*'*'*'*'**'*'*'*/
 /*Desktop display none list*/
-/*'*'*'*'*'*'**'*'*'*/
+
 .vr-glasses_phone,
 .phone_astronaut,
 #phone_menu {
@@ -339,7 +304,6 @@ nav a:hover {
       "mainsection2"
       "mainsection4"
       "footer";
-
     margin: 0 auto;
     width: 100%;
   }
@@ -357,6 +321,8 @@ nav a:hover {
 
   .navsection {
     grid-area: nav;
+    height: 75px;
+    width: 100%;
   }
 
   header {
@@ -367,20 +333,6 @@ nav a:hover {
     background-size: cover;
     background-position-x: right;
     background-position-y: bottom;
-  }
-
-  .mainsection1 {
-    grid-area: mainsection1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .mainsection2 {
-    grid-area: mainsection2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .mainsection3 {
@@ -402,15 +354,6 @@ nav a:hover {
     flex-direction: row;
     align-items: flex-start;
   }
-
-  /*'*'*'*'*'*'*'*'*/
-  /*Nav section*/
-  .navsection {
-    height: 75px;
-    width: 100%;
-  }
-  /*nav/hamburger*/
-
   nav,
   #hamburger-menu {
     display: none;
@@ -460,7 +403,8 @@ nav a:hover {
     background-color: #fff;
     padding: 20px;
   }
-  /*nav/hamburger*/
+
+  /* Main section */
 
   #pagetitle {
     font-family: "play", sans-serif;
@@ -483,35 +427,18 @@ nav a:hover {
     border: 1px solid #707070;
   }
 
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Main section 1*/
-  /*'*'*'*'*'*'**'*'*'*/
-
-  .main_1_text {
+  .main_1_text,
+  .main_2_text {
+    width: 320px;
     margin-top: 5px;
     font-size: 1.2em;
     padding: 15px;
-  }
-
-  .main_1_text::first-letter {
-    color: #4c6ef5;
-    font-weight: bold;
   }
 
   .astronaut {
     width: 320px;
     height: auto;
     margin: 10px;
-  }
-
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Main section 2*/
-  /*'*'*'*'*'*'**'*'*'*/
-
-  .main_2_text {
-    margin-top: 5px;
-    font-size: 1.2em;
-    padding: 15px;
   }
 
   .vr-glasses_phone {
@@ -523,13 +450,7 @@ nav a:hover {
     margin: 0 auto;
   }
 
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Main section 4*/
-  /*'*'*'*'*'*'**'*'*'*/
-
-  /*'*'*'*'*'*'**'*'*'*/
   /*Footer section*/
-  /*'*'*'*'*'*'**'*'*'*/
 
   footer ul {
     display: flex;

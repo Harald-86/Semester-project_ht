@@ -222,6 +222,7 @@ nav a:hover {
 .text,
 .exhibition_img {
   width: 500px;
+  font-size: 1.3em;
 }
 
 .exhibition_img {
@@ -432,19 +433,8 @@ h2 {
   .text,
   .exhibition_img {
     width: 320px;
+    font-size: 1.2em;
   }
-
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Main section 2*/
-  /*'*'*'*'*'*'**'*'*'*/
-
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Main section 4*/
-  /*'*'*'*'*'*'**'*'*'*/
-
-  /*'*'*'*'*'*'**'*'*'*/
-  /*Footer section*/
-  /*'*'*'*'*'*'**'*'*'*/
 
   footer ul {
     display: flex;
