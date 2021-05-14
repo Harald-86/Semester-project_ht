@@ -327,7 +327,7 @@ nav a:hover {
 
   header {
     grid-area: header;
-    height: 100px;
+    height: 150px;
     background-image: url("../Images/exhibition.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -341,7 +341,7 @@ nav a:hover {
 
   .mainsection4 {
     grid-area: mainsection4;
-    height: 100px;
+    height: 150px;
     background-image: url("../Images/museum.jpg");
     background-size: cover;
     background-position-y: bottom;
