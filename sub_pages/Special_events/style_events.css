@@ -124,11 +124,15 @@ h2 {
   text-align: center;
 }
 
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 /*'*'*'*'*'*'**'*'*'*/
 
 /*Nav section*/
 
-/*Dette er limt inn*/
 .hamburger-label {
   display: none;
 }
