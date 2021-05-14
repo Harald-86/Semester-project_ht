@@ -170,8 +170,6 @@ nav a:hover {
   display: block;
 }
 
-/*Dette er limt inn*/
-
 #pagetitle {
   font-family: "play", sans-serif;
   font-size: 2em;
@@ -206,9 +204,7 @@ nav a:hover {
   color: #82c91e;
 }
 
-/*'*'*'*'*'*'**'*'*'*/
 /*Header section*/
-/*'*'*'*'*'*'**'*'*'*/
 
 #headertext {
   font-family: "play", sans-serif;
@@ -242,9 +238,7 @@ a {
   text-decoration: none;
 }
 
-/*'*'*'*'*'*'**'*'*'*/
 /*Footer*/
-/*'*'*'*'*'*'**'*'*'*/
 
 .footerinfo {
   font-size: 1em;

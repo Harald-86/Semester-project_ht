@@ -114,11 +114,8 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/*'*'*'*'*'*'**'*'*'*/
-
 /*Nav section*/
 
-/*Dette er limt inn*/
 .hamburger-label {
   display: none;
 }
@@ -157,8 +154,6 @@ nav a:hover {
   display: block;
 }
 
-/*Dette er limt inn*/
-
 #pagetitle {
   font-family: "play", sans-serif;
   font-size: 2em;
@@ -193,9 +188,7 @@ nav a:hover {
   color: #82c91e;
 }
 
-/*'*'*'*'*'*'**'*'*'*/
 /*Header section*/
-/*'*'*'*'*'*'**'*'*'*/
 
 #headertext {
   font-family: "play", sans-serif;
@@ -213,9 +206,7 @@ nav a:hover {
   border: 1px solid #707070;
 }
 
-/*'*'*'*'*'*'**'*'*'*/
 /*Footer*/
-/*'*'*'*'*'*'**'*'*'*/
 
 .footerinfo {
   font-size: 1em;
@@ -231,13 +222,13 @@ nav a:hover {
   padding: 5px;
 }
 
-/*'*'*'*'*'*'**'*'*'*/
+/
 /*Main section 1*/
-/*'*'*'*'*'*'**'*'*'*/
+
 
 .text {
-  width: 450px;
-  font-size: 1.5em;
+  width: 500px;
+  font-size: 1.3em;
 }
 
 .text p {

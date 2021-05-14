@@ -197,9 +197,7 @@ nav a:hover {
   color: #82c91e;
 }
 
-/*'*'*'*'*'*'**'*'*'*/
 /*Header section*/
-/*'*'*'*'*'*'**'*'*'*/
 
 #headertext {
   font-family: "play", sans-serif;
@@ -217,13 +215,11 @@ nav a:hover {
   border: 1px solid #707070;
 }
 
-/*'*'*'*'*'*'**'*'*'*/
-/*Main section 1*/
-/*'*'*'*'*'*'**'*'*'*/
+/*Main section */
 
 .text {
   font-size: 1.3em;
-  width: 400px;
+  width: 500px;
   padding: 20px;
   margin: 0 50px;
 }
@@ -231,10 +227,6 @@ nav a:hover {
 .text p::first-letter {
   color: #f783ac;
 }
-
-/*'*'*'*'*'*'**'*'*'*/
-/*Main section 2*/
-/*'*'*'*'*'*'**'*'*'*/
 
 .elephant {
   display: block;
