@@ -127,7 +127,6 @@ p::first-letter {
 
 /*Nav section*/
 
-/*Dette er limt inn*/
 .hamburger-label {
   display: none;
 }
@@ -165,8 +164,6 @@ nav a:hover {
 #hamburger-menu:checked ~ nav {
   display: block;
 }
-
-/*Dette er limt inn*/
 
 #pagetitle {
   font-family: "play", sans-serif;

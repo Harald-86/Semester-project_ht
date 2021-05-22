@@ -125,7 +125,6 @@ footer a:hover {
 
 /*Nav section*/
 
-/*Dette er limt inn*/
 .hamburger-label {
   display: none;
 }
@@ -163,8 +162,6 @@ nav a:hover {
 #hamburger-menu:checked ~ nav {
   display: block;
 }
-
-/*Dette er limt inn*/
 
 #pagetitle {
   font-family: "play", sans-serif;
@@ -224,6 +221,10 @@ nav a:hover {
 .exhibition_img {
   width: 500px;
   font-size: 1.3em;
+}
+
+.text p::first-letter {
+  color: #f783ac;
 }
 
 .exhibition_img {

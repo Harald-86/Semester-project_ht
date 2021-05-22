@@ -136,7 +136,6 @@ footer a:hover {
 
 /*Nav section*/
 
-/*Dette er limt inn*/
 .hamburger-label {
   display: none;
 }
@@ -231,6 +230,10 @@ nav a:hover {
 .involved_img {
   width: 500px;
   font-size: 1.3em;
+}
+
+.text p::first-letter {
+  color: #f783ac;
 }
 
 .involved_img {
