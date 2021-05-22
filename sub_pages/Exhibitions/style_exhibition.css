@@ -121,6 +121,11 @@ footer a:hover {
   font-weight: bold;
 }
 
+.navsection a {
+  text-decoration: none;
+  color: #184c54;
+}
+
 /*'*'*'*'*'*'**'*'*'*/
 
 /*Nav section*/

@@ -92,6 +92,11 @@ footer {
 
 /* For all*/
 
+.navsection a {
+  text-decoration: none;
+  color: #184c54;
+}
+
 .cta {
   background-color: #184c54;
   color: #fff;
