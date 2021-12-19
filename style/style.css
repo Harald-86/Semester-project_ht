@@ -288,6 +288,12 @@ nav a:hover {
   display: none;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 810px) {
+  .contact-container {
+    margin: 20px;
+  }
+}
+
 /*'*'*'*'*'*'**'*'*'*/
 /*@Media*/
 /*'*'*'*'*'*'**'*'*'*/

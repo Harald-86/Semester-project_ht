@@ -237,9 +237,9 @@ nav a:hover {
   font-size: 1.3em;
 }
 
-.text p::first-letter {
+/* .text p::first-letter {
   color: #f783ac;
-}
+} */
 
 .involved_img {
   margin: 10px;
@@ -265,6 +265,80 @@ a {
   font-size: 1em;
   margin: 0;
   padding: 5px;
+}
+
+/*'*'*'*'*'*'**'*'*'*/
+/*Contact Form*/
+/*'*'*'*'*'*'**'*'*'*/
+
+.form-wrapper {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-title,
+.signup-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+textarea {
+  width: 100%;
+  max-width: 715px;
+  height: 200px;
+}
+
+form {
+  align-items: center;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  width: 90%;
+  max-width: 700px;
+}
+
+button {
+  background: rgb(83, 123, 197);
+  color: white;
+  padding: 10px;
+  border: black solid 1px;
+  border-radius: 5px;
+  text-shadow: 0 4px 10px;
+  width: 150px;
+  height: 50px;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+button:hover {
+  background-color: cornflowerblue;
+}
+
+input {
+  width: 100%;
+
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 14px;
+}
+
+.main-signup {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
 /*'*'*'*'*'*'**'*'*'*/

@@ -228,9 +228,9 @@ nav a:hover {
   font-size: 1.3em;
 }
 
-.text p::first-letter {
+/* .text p::first-letter {
   color: #f783ac;
-}
+} */
 
 .exhibition_img {
   margin: 10px 10px;

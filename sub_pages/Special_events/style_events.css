@@ -242,9 +242,9 @@ h4 {
   font-size: 1.3em;
 }
 
-.text p::first-letter {
+/* .text p::first-letter {
   color: #f783ac;
-}
+} */
 
 .event_images {
   margin: 10px;

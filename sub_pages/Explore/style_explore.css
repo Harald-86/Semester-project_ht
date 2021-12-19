@@ -231,9 +231,9 @@ nav a:hover {
   margin: 0 50px;
 }
 
-.text p::first-letter {
+/* .text p::first-letter {
   color: #f783ac;
-}
+} */
 
 .elephant {
   display: block;
